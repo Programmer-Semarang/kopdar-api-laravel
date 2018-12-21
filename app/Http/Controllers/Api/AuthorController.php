@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Http\Controllers\Controller;
 use App\Author;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class AuthorController extends Controller
@@ -21,7 +21,8 @@ class AuthorController extends Controller
         ]);
     }
 
-    public function get(Request $req) {
+    public function get(Request $req)
+    {
         $data = Author::all();
 
         return response()->json([
